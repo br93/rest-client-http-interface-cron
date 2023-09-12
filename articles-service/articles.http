@@ -1,0 +1,28 @@
+### Find All Articles
+GET http://localhost:8080/articles
+
+### Get Article by ID
+GET http://localhost:8080/articles/1
+
+### Create new article
+POST http://localhost:8080/articles
+Content-Type: application/json
+
+{
+  "title": "Hello World!",
+  "author": "admin",
+  "content": "Hello!"
+}
+
+### Update existing Content
+PUT http://localhost:8080/articles/1
+Content-Type: application/json
+
+{
+  "title": "Hello updated World!",
+  "author": "admin",
+  "content": "Hello again!"
+}
+
+### delete by id
+DELETE http://localhost:8080/articles/1
